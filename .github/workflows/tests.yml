@@ -24,4 +24,4 @@ jobs:
         with:
           java-version: 11
       - name: Sonarqube analyze
-        run: gradle build && gradle sonarqube -Dsonar.projectKey=${{ secrets.SONARQUBE_PROJECT_KEY }} -Dsonar.host.url=http://${{ secrets.SONARQUBE_HOST }} -Dsonar.login=${{ secrets.SONARQUBE_TOKEN }} -Dsonar.branch.name=${GITHUB_REF##*/}
+        run: gradle build && gradle sonarqube -Dsonar.projectKey=${{ secrets.SONARQUBE_PROJECT_KEY }} -Dsonar.host.url=${{ secrets.SONARQUBE_HOST }} -Dsonar.login=${{ secrets.SONARQUBE_TOKEN }} -Dsonar.branch.name=${GITHUB_REF##*/}
