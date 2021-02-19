@@ -3,4 +3,4 @@
 springboot-test-2
 
 
-Version: 0.1 updated
+Version: 0.2 updated
